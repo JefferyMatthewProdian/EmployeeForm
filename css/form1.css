@@ -1,24 +1,141 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
 #header {
-    background-color:red;
+    background: linear-gradient(90deg, #1565c0, #1e88e5);
     color: white;
     text-align: center;
-    font-size: xx-large;
-    padding-top: 20px;
+    font-size: 32px;
+    padding: 20px 0;
+    margin: 0;
+    letter-spacing: 1px;
 }
-#EmployeeForm{
-    font-size: x-large;
+
+/* Sub heading */
+h1:nth-of-type(2) {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
 }
-#submit_button{
-    background-color: green;
-    color: white;
-    font-size: x-large;
+
+/* Form container */
+#EmployeeForm {
+    background: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
 }
-.input{
+
+/* Input group */
+.input {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
     display: block;
-    margin-bottom: 1px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
 }
-#footer{
-    background-color: red;
+
+/* Text, number, password inputs */
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Focus effect */
+input:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+/* ===== GENDER RADIO BUTTON FIX ===== */
+.input .gender-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.input .gender-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.input input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 0;
+}
+/* ================================= */
+
+/* Password strength bar */
+.strength-bar {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#strength-fill {
+    height: 100%;
+    width: 0%;
+    background: red;
+    border-radius: 6px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Strength text */
+#strength-text {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Submit button */
+#submit_button {
+    width: 100%;
+    background-color: #2e7d32;
     color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit_button:hover {
+    background-color: #1b5e20;
+}
+
+/* Footer */
+#footer {
+    background-color: #263238;
+    color: #cfd8dc;
     text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    margin-top: 50px;
 }
