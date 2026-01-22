@@ -3,14 +3,14 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+ 
 /* Page background */
 body {
     background: #f4f6f8;
     margin: 0;
     padding: 0;
 }
-
+ 
 /* Header */
 #header {
     background: linear-gradient(90deg, #1565c0, #1e88e5);
@@ -21,7 +21,7 @@ body {
     margin: 0;
     letter-spacing: 1px;
 }
-
+ 
 /* Sub heading */
 h1:nth-of-type(2) {
     text-align: center;
@@ -29,7 +29,7 @@ h1:nth-of-type(2) {
     margin-top: 20px;
     color: #333;
 }
-
+ 
 /* Form container */
 #EmployeeForm {
     background: white;
@@ -40,12 +40,12 @@ h1:nth-of-type(2) {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 18px;
 }
-
+ 
 /* Input group */
 .input {
     margin-bottom: 15px;
 }
-
+ 
 /* Labels */
 label {
     display: block;
@@ -53,7 +53,7 @@ label {
     font-weight: bold;
     color: #444;
 }
-
+ 
 /* Text, number, password inputs */
 input[type="text"],
 input[type="number"],
@@ -64,31 +64,31 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+ 
 /* Focus effect */
 input:focus {
     outline: none;
     border-color: #1976d2;
 }
-
+ 
 /* ===== GENDER RADIO BUTTON FIX ===== */
 .input .gender-group {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
+ 
 .input .gender-group label {
     font-weight: normal;
     margin-bottom: 0;
 }
-
+ 
 .input input[type="radio"] {
     margin-right: 5px;
     margin-left: 0;
 }
 /* ================================= */
-
+ 
 /* Password strength bar */
 .strength-bar {
     width: 100%;
@@ -97,7 +97,7 @@ input:focus {
     border-radius: 6px;
     overflow: hidden;
 }
-
+ 
 #strength-fill {
     height: 100%;
     width: 0%;
@@ -105,14 +105,14 @@ input:focus {
     border-radius: 6px;
     transition: width 0.3s ease, background-color 0.3s ease;
 }
-
+ 
 /* Strength text */
 #strength-text {
     margin-top: 6px;
     font-size: 14px;
     font-weight: bold;
 }
-
+ 
 /* Submit button */
 #submit_button {
     width: 100%;
@@ -125,11 +125,11 @@ input:focus {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
+ 
 #submit_button:hover {
     background-color: #1b5e20;
 }
-
+ 
 /* Footer */
 #footer {
     background-color: #263238;
@@ -139,3 +139,5 @@ input:focus {
     font-size: 16px;
     margin-top: 50px;
 }
+ 
+ 
